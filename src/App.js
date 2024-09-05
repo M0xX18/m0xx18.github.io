@@ -8,11 +8,14 @@ function App() {
       <header className="App-header">
         <div className="container">
           <div className="text-section">
-            <h1>ANDRÉS EDUARDO GARCÍA BAYONA</h1>
-            <ChangingText />
+            <strong>
+              <h1>ANDRÉS EDUARDO GARCÍA BAYONA</h1>
+              <ChangingText />
+            </strong>
+            <p>Ingeniero en Sistemas 💻 Ciberseguridad 🔒 Red Team 🔴 Road to OSCP 🛣️ Entusiasta de Linux y Pentesting 🐧 CTF player 🕹️ Python 🐍</p>
           </div>
           <div className="image-section">
-            <img src="imagen.jpg" alt="Foto" className="profile-image" />
+            <img src="./foto.jpeg" alt="Foto" className="profile-image" />
           </div>
         </div>
       </header>
