@@ -8,11 +8,11 @@ function App() {
       <header className="App-header">
         <div className="container">
           <div className="text-section">
-            <h1>ANDRÉS EDUARDO GARCÍA</h1>
+            <h1>ANDRÉS EDUARDO GARCÍA BAYONA</h1>
             <ChangingText />
           </div>
           <div className="image-section">
-            <img src="tu-imagen.jpg" alt="Mi Imagen" className="profile-image" />
+            <img src="imagen.jpg" alt="Foto" className="profile-image" />
           </div>
         </div>
       </header>
@@ -37,7 +37,7 @@ function ChangingText() {
   const [word, setWord] = useState('seguras');
 
   useEffect(() => {
-    const words = ['seguras', 'creativas', 'innovadoras']; 
+    const words = ['seguras', 'creativas', 'innovadoras'];
     const interval = setInterval(() => {
       setWord((prevWord) => {
         const currentIndex = words.indexOf(prevWord);
@@ -49,9 +49,11 @@ function ChangingText() {
   }, []);
 
   return (
-    <p>Me gusta crear experiencias {word}</p>
+    <p>
+      Me gusta crear experiencias{' '}
+      <span style={{ color: '#007bff' }}>{word}</span>
+    </p>
   );
 }
 
 export default App;
-
